@@ -1,41 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Contact Form</title>
-        <link rel="stylesheet" href="css/styles.css">
-        <link rel="stylesheet" href="css/oform.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Form</title>
+
+    <!-- Existing site styles -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Form-specific styles -->
+    <link rel="stylesheet" href="css/oform.css">
+</head>
+
 <body>
+
+<div class="container">
+
     <form name="cOrder" method="post" action="cgi-bin/formmail.pl">
-        <!--Input boxes for the user’s first name,
-            last name, street address, city, province, 
-            postal code, and phone number.
-            The field names set to fName, lName,
-            street, city, province, poscode, 
-            and phone, respectively.-->
-        <label for="fName">First Name: </label><br>
-        <input type="text" name="fName" id="fName"><br><br>
 
-        <label for="lName">Last Name</label><br>
-        <input type="text" name="lName" id="lName" required><br><br>
+        <!-- Personal Information -->
+        <label for="fName">First Name:</label>
+        <input type="text" name="fName" id="fName" required><br>
 
-        <label for="street">Street Address</label><br>
+        <label for="lName">Last Name:</label>
+        <input type="text" name="lName" id="lName" required><br>
+
+        <label for="street">Street Address:</label>
         <input type="text" name="street" id="street" required><br>
-        <label for="city"> City</label><br>
-        <input type="text" name="city" id="city" required><br>
-        <label for="province">province</label><br>
-        <input type="text" id="province" name="province" required><br>
-        <label for="poscode">postal code</label><br>
-        <!--pattern for Postal code-->
-        <input type="text" id="poscode" name="poscode" required
-               pattern="[A-Za-z][0-9][A-Za-z][ ]?[0-9][A-Za-z][0-9]"><br><br>
-        <!--pattern for Phone number -->
-        <label for="phone">phone number</label><br>
-        <input type="text" name="phone" id="phone"  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"  
-               required><br><br>
 
-        <!--Selection lists for the Student, Parent, Dancers, Performer, other-->
+        <label for="city">City:</label>
+        <input type="text" name="city" id="city" required><br>
+
+        <label for="province">Province:</label>
+        <input type="text" name="province" id="province" required><br>
+
+        <!-- Postal Code-->
+        <label for="poscode">Postal Code:</label>
+        <input type="text"
+               name="poscode"
+               id="poscode"
+               required
+               pattern="[A-Za-z][0-9][A-Za-z][ ]?[0-9][A-Za-z][0-9]"
+               placeholder="A1A 1A1"><br>
+
+        <!-- Phone Number-->
+        <label for="phone">Phone Number:</label>
+        <input type="tel"
+               name="phone"
+               id="phone"
+               required
+               pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+               placeholder="123-456-7890"><br>
+
+        <!-- Selection List -->
         <label for="category">You are a/an:</label>
         <select name="category" id="category">
             <option value="student">Student</option>
@@ -43,23 +59,27 @@
             <option value="dancer">Dancer</option>
             <option value="performer">Performer</option>
             <option value="other">Other</option>
-        </select><br><br>
+        </select><br>
 
-         <label class="checkbox">
-                <input type="checkbox" name="contactme">
-                Contact me please
-        </label><br>
-
-        <label>Additional Comments:
-                <br><textarea rows="5"></textarea>
+        <!-- Checkbox -->
+        <label class="checkbox">
+            <input type="checkbox" name="contactme">
+            Contact me please
         </label>
-        <br><br>
+
+        <!-- Text Area -->
+        <label for="comments">Additional Comments:</label>
+        <textarea id="comments" rows="5"></textarea>
+
+        <!-- Buttons -->
         <div class="buttons">
-                <input type="submit" value="Submit Details">
-                <input type="reset" value="Cancel Details">
+            <input type="submit" value="Submit Details">
+            <input type="reset" value="Cancel Details">
         </div>
-    </form>    
-    
-</body
+
+    </form>
+
+</div>
+
+</body>
 </html>
-       
