@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <title>Contact Form</title>
@@ -13,7 +13,7 @@
             postal code, and phone number.
             The field names set to fName, lName,
             street, city, province, poscode, 
-            and phone, respectively.-->>
+            and phone, respectively.-->
         <label for="fName">First Name: </label><br>
         <input type="text" name="fName" id="fName"><br><br>
 
@@ -32,18 +32,18 @@
                pattern="[A-Za-z][0-9][A-Za-z][ ]?[0-9][A-Za-z][0-9]"><br><br>
         <!--pattern for Phone number -->
         <label for="phone">phone number</label><br>
-        <input type="number" name="phone" id="phone"  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"  
+        <input type="text" name="phone" id="phone"  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"  
                required><br>
 
-        <!--Selection lists for the Student, Parent, Dancers, Performer, other-->>
-        <select for="person">You are a/an:</select>
+        <!--Selection lists for the Student, Parent, Dancers, Performer, other-->
+        <label for="category">You are a/an:</label>
+        <select name="category" id="category">
             <option value="student">Student</option>
             <option value="parent">Parent</option>
             <option value="dancer">Dancer</option>
             <option value="performer">Performer</option>
-            <option value="other">other</option>
+            <option value="other">Other</option>
         </select>
-        <input type="submit">
 
          <label class="checkbox">
                 <input type="checkbox" name="contactme">
