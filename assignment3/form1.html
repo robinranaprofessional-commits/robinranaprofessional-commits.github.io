@@ -1,9 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
         <meta charset="UTF-8">
-        <title>Contact me</title>
-
-        
+        <title>Contact Form</title>
+        <link rel="stylesheet" href="css/styles.css">
     </head>
+<body>
+    <form name="cOrder" method="post" action="cgi-bin/formmail.pl">
+        <!--Input boxes for the user’s first name,
+            last name, street address, city, province, 
+            postal code, and phone number.
+            The field names set to fName, lName,
+            street, city, province, poscode, 
+            and phone, respectively.-->>
+        <label for="fName">First Name: </label><br>
+        <input type="text" name="fName" id="fName"><br><br>
+
+        <label for="lName">Last Name</label><br>
+        <input type="text" name="lName" id="lName" required><br><br>
+
+        <label for="street">Street Address</label><br>
+        <input type="text" name="street" id="street" required><br>
+        <label for="city"> City</label><br>
+        <input type="text" name="city" id="city" required><br>
+        <label for="province">province</label><br>
+        <input type="text" id="province" name="province" required><br>
+        <label for="poscode">postal code</label><br>
+        <!--pattern for Postal code-->
+        <input type="text" id="poscode" name="poscode" required
+               pattern="[A-Za-z][0-9][A-Za-z][ ]?[0-9][A-Za-z][0-9]"><br><br>
+        <!--pattern for Phone number -->
+        <label for="phone">phone number</label><br>
+        <input type="number" name="phone" id="phone"  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"  
+               required><br>
+
+        <!--Selection lists for the Student, Parent, Dancers, Performer, other-->>
+        <select for="person">You are a/an:</select>
+            <option value="student">Student</option>
+            <option value="parent">Parent</option>
+            <option value="dancer">Dancer</option>
+            <option value="performer">Performer</option>
+            <option value="other">other</option>
+        </select>
+        <input type="submit">
+
+         <label class="checkbox">
+                <input type="checkbox" name="contactme">
+                Contact me please
+        </label>
+
+        <label>Additional Comments:
+                <textarea rows="5"></textarea>
+        </label>
+
+        <div class="buttons">
+                <input type="submit" value="Submit Details">
+                <input type="reset" value="Cancel Details">
+        </div>
+    </form>    
+    
+</body
 </html>
+       
