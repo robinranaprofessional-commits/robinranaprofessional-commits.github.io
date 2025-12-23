@@ -54,7 +54,7 @@ body {
 
 .content {
     padding: 20px;
-    position: relative;            /* relative positioning example */
+    position: relative;            
 }
 
 /* Heading positioning example */
@@ -73,8 +73,8 @@ body {
 
 /* Logo image styling */
 .logo {
-    width: 300px;                  /* width */
-    height: auto;                  /* height */
+    width: 300px;                  
+    height: auto;                   
 
     display: block;
     margin: 0 auto 20px;
