@@ -4,10 +4,8 @@
     <meta charset="UTF-8">
     <title>Contact Form</title>
 
-    <!-- Existing site styles -->
     <link rel="stylesheet" href="css/styles.css">
 
-    <!-- Form-specific styles -->
     <link rel="stylesheet" href="css/oform.css">
 </head>
 
@@ -33,7 +31,7 @@
         <label for="province">Province:</label>
         <input type="text" name="province" id="province" required><br>
 
-        <!-- Postal Code-->
+        <!-- Postal Code with appropirate pattern-->
         <label for="poscode">Postal Code:</label>
         <input type="text"
                name="poscode"
@@ -42,16 +40,16 @@
                pattern="[A-Za-z][0-9][A-Za-z][ ]?[0-9][A-Za-z][0-9]"
                placeholder="A1A 1A1"><br>
 
-        <!-- Phone Number-->
+        <!-- Phone Number with appropriate patterns-->
         <label for="phone">Phone Number:</label>
         <input type="tel"
                name="phone"
                id="phone"
                required
-               pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+               pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
                placeholder="123-456-7890"><br>
 
-        <!-- Selection List -->
+        <!-- Selection List  for student personal details-->
         <label for="category">You are a/an:</label>
         <select name="category" id="category">
             <option value="student">Student</option>
