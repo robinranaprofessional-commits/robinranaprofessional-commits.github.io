@@ -1,0 +1,54 @@
+form
+{   
+    max-width: 500px;
+    margin:auto;
+    background-color: blanchedalmond;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+label
+{
+    display: block;
+    margin: 15px;
+    font-weight: bold;
+}
+
+input, select, textarea
+{
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+}
+
+input:focus, textarea:focus, select:focus
+{
+    border-color:bisque;
+    outline: auto;
+}
+input:invalid
+{
+    border-color: crimson;
+}
+input:valid
+{
+    border-color: greenyellow;
+}
+.checkbox input
+{
+    width:auto;
+    margin: 10px;
+}
+.buttons
+{
+    text-align: center;
+}
+.buttons input
+{
+    width: auto;
+    padding: 15px 30px;
+    margin: 10px;
+}
+
