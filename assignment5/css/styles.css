@@ -7,9 +7,10 @@ body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 
-    /* Background image (tiled) */
+    /* Background image (tiled) 
     background-image: url("images/hi.png");
     background-repeat: repeat;
+    */
 }
 
 /*   Fluid Layout Container*/
