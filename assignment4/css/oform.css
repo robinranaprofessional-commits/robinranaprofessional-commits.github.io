@@ -52,3 +52,22 @@ input:valid
     margin: 10px;
 }
 
+/*.birthday-card{
+    background-color:rosybrown;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 15px;
+    transition:m
+}
+*/
+input:hover,
+select:hover,
+textarea:hover {
+    border-color:darkolivegreen;
+    background-color:lightsalmon;
+}
+.buttons input:hover{
+    background-color: #e6cfa3;
+    cursor: pointer;
+}
+
