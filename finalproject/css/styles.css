@@ -1,4 +1,4 @@
-/* ===================== BASE RESET ===================== */
+/* Base reset */
 * {
     margin: 0;
     padding: 0;
@@ -11,12 +11,12 @@ body {
     line-height: 1.6;
 }
 
-/* ===================== HTML5 STRUCTURAL TAGS ===================== */
+/* HTML5 structural tags */
 header, nav, main, section, article, aside, footer {
     display: block;
 }
 
-/* ===================== TOP BAR ===================== */
+/* Top bar */
 .top-bar {
     background-color: rgba(179, 42, 33, 0.95); /* RGBA color */
     color: white;
@@ -26,7 +26,7 @@ header, nav, main, section, article, aside, footer {
     letter-spacing: 1px;
 }
 
-/* ===================== HEADER / NAVIGATION ===================== */
+/* Header / Navigation */
 .site-header {
     background-color: #c0392b;
     position: sticky;
@@ -164,7 +164,7 @@ img[alt*="Logo"] {
     bottom: 5px;
 }
 
-/* ===================== HERO SECTION ===================== */
+/* Hero section */
 .hero {
     /* Mexican-inspired tri-colour gradient (green, off-white, red) with high contrast */
     background: linear-gradient(
@@ -201,7 +201,7 @@ img[alt*="Logo"] {
     animation: fadeInUp 1s ease-out 0.3s both; /* Animation */
 }
 
-/* ===================== INTRO SECTION ===================== */
+/* Intro section */
 .intro {
     padding: 60px 30px;
     max-width: 1000px;
@@ -239,7 +239,7 @@ img[alt*="Logo"] {
     color: #444;
 }
 
-/* ===================== FEATURES GRID (USING GRID LAYOUT) ===================== */
+/* Features grid */
 .features-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -291,7 +291,7 @@ img[alt*="Logo"] {
     line-height: 1.6;
 }
 
-/* ===================== CTA SECTION ===================== */
+    /* CTA section */
 .cta-section {
     text-align: center;
     padding: 60px 20px;
@@ -329,7 +329,7 @@ img[alt*="Logo"] {
     color: white;
 }
 
-/* ===================== BLOCKQUOTE ===================== */
+/* Blockquote */
 blockquote {
     background-color: #f7f2e7;
     padding: 50px;
@@ -354,7 +354,7 @@ blockquote::before {
     opacity: 0.3;
 }
 
-/* ===================== DATE SECTION ===================== */
+/* Date section */
 .date-section {
     text-align: center;
     padding: 30px 20px;
@@ -367,7 +367,7 @@ blockquote::before {
     font-weight: bold;
 }
 
-/* ===================== FOOTER ===================== */
+/* Footer */
 .site-footer {
     background-color: #1a1a1a;
     color: #ccc;
@@ -409,7 +409,7 @@ blockquote::before {
     color: #888;
 }
 
-/* ===================== LISTS ===================== */
+/* Lists */
 ul, ol {
     margin-left: 20px;
     margin-bottom: 15px;
@@ -435,7 +435,7 @@ dd {
     color: #666;
 }
 
-/* ===================== PARAGRAPHS ===================== */
+/* Paragraphs */
 p {
     margin-bottom: 15px;
     line-height: 1.7;
@@ -458,7 +458,7 @@ h1, h2, h3 {
     color: #c0392b;
 }
 
-/* ===================== IMAGES ===================== */
+/* Images */
 img {
     max-width: 100%;
     height: auto;
@@ -480,7 +480,7 @@ a img:hover {
     opacity: 0.75; /* Second semi-transparent image */
 }
 
-/* ===================== ANIMATIONS ===================== */
+/* Animations */
 @keyframes fadeInDown {
     from {
         opacity: 0;
@@ -512,7 +512,7 @@ a img:hover {
     }
 }
 
-/* ===================== TRANSITIONS ===================== */
+/* Transitions */
 .feature-card,
 .cta-btn,
 .order-btn,
@@ -520,14 +520,14 @@ a img:hover {
     transition: all 0.3s ease;
 }
 
-/* ===================== RESPONSIVE IMAGES ===================== */
+/* Responsive images */
 img {
     width: 100%;
     height: auto;
     max-width: 100%;
 }
 
-/* ===================== STORY PAGE (USING FLEX LAYOUT) ===================== */
+/* Story page */
 .story-main {
     min-height: 80vh;
 }
@@ -609,7 +609,7 @@ img {
     font-style: italic;
 }
 
-/* ===================== MENU PAGE (USING FLOAT LAYOUT) ===================== */
+/* Menu page */
 .menu-main {
     max-width: 1200px;
     margin: 0 auto;
@@ -728,7 +728,7 @@ img {
     clear: both;
 }
 
-/* ===================== FORMS (will be enhanced in contact.html) ===================== */
+/* Forms */
 form {
     max-width: 600px;
     margin: 0 auto;
@@ -792,7 +792,7 @@ form button[type="submit"]:active {
     transform: translateY(0);
 }
 
-/* ===================== CONTACT PAGE (USING POSITIONING LAYOUT) ===================== */
+/* Contact page */
 .contact-main {
     min-height: 80vh;
     position: relative;
@@ -942,5 +942,84 @@ form button[type="reset"]:hover {
     
     .contact-form-wrapper {
         margin-left: 0;
+    }
+}
+
+/* Evaluation page */
+.evaluation-hero {
+    background: linear-gradient(135deg, #fdf4e3 0%, #c0392b 60%);
+    color: #1a1a1a;
+    text-align: center;
+    padding: 80px 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.evaluation-hero h1 {
+    color: #1a1a1a;
+    font-size: 3.2rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.evaluation-hero p {
+    font-size: 1.15rem;
+    color: #333;
+}
+
+.evaluation-main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 60px 30px 80px;
+}
+
+.evaluation-intro {
+    margin-bottom: 25px;
+    color: #444;
+    font-size: 1.05rem;
+}
+
+.evaluation-form-section form {
+    background: #fff;
+}
+
+.rating-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.rating-group span {
+    font-weight: bold;
+    color: #c0392b;
+}
+
+.rating-options {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.rating-options label {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: #f7f2e7;
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1px solid #e2d7c9;
+    cursor: pointer;
+}
+
+.rating-options input[type="radio"] {
+    accent-color: #c0392b;
+}
+
+@media (max-width: 768px) {
+    .evaluation-hero h1 {
+        font-size: 2.4rem;
+    }
+    .rating-options {
+        gap: 10px;
     }
 }

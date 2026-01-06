@@ -1,4 +1,4 @@
-/* ===================== MOBILE RESPONSIVE DESIGN ===================== */
+/* Mobile responsive design */
 
 /* Tablet styles */
 @media (max-width: 1024px) {
@@ -34,7 +34,7 @@
         display: flex;
     }
     
-    /* Contextual selector for sub-level menus */
+    /* Contextual selector for sub-level menu */
     .nav-links li {
         width: 100%;
         text-align: center;

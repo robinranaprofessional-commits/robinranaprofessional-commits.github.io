@@ -1,0 +1,181 @@
+<!--Evaluation Form
+Author: Robin Rana
+T00743614 COMP2681
+Description: Evaluation form for the Señor Froggy website design.
+ Provide feedback on design, usefulness, and overall impression.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Evaluation form for the Señor Froggy website design. Provide feedback on design, usefulness, and overall impression.">
+    <meta name="keywords" content="Señor Froggy evaluation form, website feedback, design review">
+    <meta name="author" content="Robin Rana">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+
+    <title>Evaluation Form | Señor Froggy</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+ 
+<div class="top-bar">
+    <p>Proudly serving Kamloops since 1979 &mdash; Over 45 years of heritage!</p>
+</div>
+
+ <header class="site-header">
+    <nav class="nav-bar">
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.png" alt="Señor Froggy Logo"></a>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="story.html">Our Story</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="cross-reference.html">Cross-Reference</a></li>
+        </ul>
+
+        <a class="order-btn" href="menu.html">Order Online</a>
+
+        <div class="navicon" id="navicon"></div>
+    </nav>
+</header>
+
+<section class="evaluation-hero">
+    <h1>Evaluation Form</h1>
+    <p>Your feedback helps us improve the Señor Froggy experience.</p>
+</section>
+
+<main class="evaluation-main">
+    <section class="evaluation-intro">
+        <p>Please rate each area from 1 (needs improvement) to 5 (excellent). All ratings are required. Add any additional comments at the end.</p>
+    </section>
+
+    <section class="evaluation-form-section">
+        <form id="evaluationForm" name="evaluationForm" method="post" action="#">
+            <fieldset>
+                <legend>Design & Visual Appeal</legend>
+                <div class="rating-group" role="group" aria-label="Design rating">
+                    <span>Rate the overall design/visual appeal:</span>
+                    <div class="rating-options">
+                        <label><input type="radio" name="design" value="1" required> 1</label>
+                        <label><input type="radio" name="design" value="2"> 2</label>
+                        <label><input type="radio" name="design" value="3"> 3</label>
+                        <label><input type="radio" name="design" value="4"> 4</label>
+                        <label><input type="radio" name="design" value="5"> 5</label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Usefulness & Content</legend>
+                <div class="rating-group" role="group" aria-label="Usefulness rating">
+                    <span>How useful is the content for your needs?</span>
+                    <div class="rating-options">
+                        <label><input type="radio" name="usefulness" value="1" required> 1</label>
+                        <label><input type="radio" name="usefulness" value="2"> 2</label>
+                        <label><input type="radio" name="usefulness" value="3"> 3</label>
+                        <label><input type="radio" name="usefulness" value="4"> 4</label>
+                        <label><input type="radio" name="usefulness" value="5"> 5</label>
+                    </div>
+                </div>
+
+                <div class="rating-group" role="group" aria-label="Clarity rating">
+                    <span>Clarity of information and messaging:</span>
+                    <div class="rating-options">
+                        <label><input type="radio" name="clarity" value="1" required> 1</label>
+                        <label><input type="radio" name="clarity" value="2"> 2</label>
+                        <label><input type="radio" name="clarity" value="3"> 3</label>
+                        <label><input type="radio" name="clarity" value="4"> 4</label>
+                        <label><input type="radio" name="clarity" value="5"> 5</label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Navigation & Usability</legend>
+                <div class="rating-group" role="group" aria-label="Navigation rating">
+                    <span>Ease of navigation:</span>
+                    <div class="rating-options">
+                        <label><input type="radio" name="navigation" value="1" required> 1</label>
+                        <label><input type="radio" name="navigation" value="2"> 2</label>
+                        <label><input type="radio" name="navigation" value="3"> 3</label>
+                        <label><input type="radio" name="navigation" value="4"> 4</label>
+                        <label><input type="radio" name="navigation" value="5"> 5</label>
+                    </div>
+                </div>
+
+                <div class="rating-group" role="group" aria-label="Responsiveness rating">
+                    <span>Mobile/tablet responsiveness:</span>
+                    <div class="rating-options">
+                        <label><input type="radio" name="responsiveness" value="1" required> 1</label>
+                        <label><input type="radio" name="responsiveness" value="2"> 2</label>
+                        <label><input type="radio" name="responsiveness" value="3"> 3</label>
+                        <label><input type="radio" name="responsiveness" value="4"> 4</label>
+                        <label><input type="radio" name="responsiveness" value="5"> 5</label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Overall Impression</legend>
+                <label for="impression">Overall impression of the website:</label>
+                <select id="impression" name="impression" required>
+                    <option value="">Select a rating</option>
+                    <option value="1">1 - Needs improvement</option>
+                    <option value="2">2 - Fair</option>
+                    <option value="3">3 - Good</option>
+                    <option value="4">4 - Very good</option>
+                    <option value="5">5 - Excellent</option>
+                </select>
+
+                <label for="recommend">How likely are you to recommend this site?</label>
+                <select id="recommend" name="recommend" required>
+                    <option value="">Select an option</option>
+                    <option value="5">5 - Very likely</option>
+                    <option value="4">4 - Likely</option>
+                    <option value="3">3 - Neutral</option>
+                    <option value="2">2 - Unlikely</option>
+                    <option value="1">1 - Very unlikely</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Additional Feedback</legend>
+                <label for="favorite">Most valuable feature or section:</label>
+                <input type="text" id="favorite" name="favorite" placeholder="e.g., Menu layout, contact form, responsiveness">
+
+                <label for="comments">Other comments or suggestions:</label>
+                <textarea id="comments" name="comments" rows="5" placeholder="Tell us what to improve or what you liked most."></textarea>
+            </fieldset>
+
+            <button type="submit">Submit Evaluation</button>
+            <button type="reset">Clear Form</button>
+        </form>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="footer-content">
+        <ul>
+            <li><a href="story.html">Our Story</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="cross-reference.html">Cross-Reference</a></li>
+        </ul>
+
+        <p>
+            &copy; 2025 Señor Froggy | 
+            Last updated: <span id="updated"></span>
+        </p>
+    </div>
+</footer>
+
+</body>
+</html>
