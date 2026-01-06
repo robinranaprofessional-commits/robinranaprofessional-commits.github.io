@@ -166,12 +166,18 @@ img[alt*="Logo"] {
 
 /* ===================== HERO SECTION ===================== */
 .hero {
-    background: linear-gradient(135deg, #c0392b 0%, #8b1a1a 100%);
+    /* Mexican-inspired tri-colour gradient (green, off-white, red) with high contrast */
+    background: linear-gradient(
+        135deg,
+        #006837 0%,        /* deep green */
+        #fdf4e3 45%,       /* warm off‑white for contrast */
+        #c0392b 100%       /* rich red */
+    );
     background-size: cover;
     background-position: center;
     background-origin: border-box;
     background-clip: padding-box;
-    color: white;
+    color: #1a1a1a;       /* darker text for better contrast on light center band */
     text-align: center;
     padding: 120px 20px;
     position: relative;
