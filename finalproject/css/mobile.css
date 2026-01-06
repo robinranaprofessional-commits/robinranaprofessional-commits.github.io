@@ -1,0 +1,179 @@
+/* ===================== MOBILE RESPONSIVE DESIGN ===================== */
+
+/* Tablet styles */
+@media (max-width: 1024px) {
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    /* Navigation */
+    .nav-bar {
+        flex-wrap: wrap;
+        padding: 15px 20px;
+    }
+    
+    .nav-links {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        gap: 0;
+        margin-top: 20px;
+        background-color: rgba(192, 57, 43, 0.98);
+        padding: 20px 0;
+        border-radius: 8px;
+    }
+    
+    .nav-links.active {
+        display: flex;
+    }
+    
+    /* Contextual selector for sub-level menus */
+    .nav-links li {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .nav-links li a {
+        display: block;
+        padding: 15px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .nav-links li:last-child a {
+        border-bottom: none;
+    }
+    
+    /* Navicon for mobile */
+    .navicon {
+        display: block;
+    }
+    
+    .order-btn {
+        margin-top: 10px;
+        width: 100%;
+        text-align: center;
+    }
+    
+    /* Hero section */
+    .hero {
+        padding: 60px 20px;
+    }
+    
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .hero p {
+        font-size: 1rem;
+    }
+    
+    /* Features grid */
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 40px 20px;
+    }
+    
+    /* Intro section */
+    .intro {
+        padding: 40px 20px;
+    }
+    
+    .intro h2 {
+        font-size: 2rem;
+    }
+    
+    .drop-cap {
+        font-size: 1rem;
+    }
+    
+    .drop-cap::first-letter {
+        font-size: 3.5rem;
+    }
+    
+    /* CTA section */
+    .cta-section {
+        padding: 40px 20px;
+    }
+    
+    .cta-btn {
+        display: block;
+        margin: 10px 0;
+        width: 100%;
+    }
+    
+    /* Blockquote */
+    blockquote {
+        padding: 30px 20px;
+        font-size: 1.1rem;
+        margin: 40px 20px;
+    }
+    
+    /* Footer */
+    .footer-content ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    /* Forms */
+    form {
+        padding: 20px;
+        margin: 20px;
+    }
+    
+    /* Video responsive */
+    video {
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    /* Audio responsive */
+    audio {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.75rem;
+    }
+    
+    .intro h2 {
+        font-size: 1.75rem;
+    }
+    
+    .logo img {
+        width: 120px;
+    }
+    
+    .top-bar {
+        font-size: 0.75rem;
+        padding: 6px;
+    }
+    
+    .contact-info {
+        position: static;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .contact-form-wrapper {
+        margin-left: 0;
+        padding: 20px;
+    }
+    
+    .menu-item {
+        float: none;
+        width: 100%;
+        margin-right: 0;
+    }
+}
